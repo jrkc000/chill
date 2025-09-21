@@ -1,0 +1,66 @@
+/* Center the main button and position others around it */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn-group {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  position: absolute;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  border-radius: 18px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/85/31/dc/8531dcd1b41923c628eb8ad5d41c9944.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+#btn1 {
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%, 0);
+  background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+  color: white;
+}
+/* Move btn2 farther down */
+#btn2 {
+  left: 50%;
+  bottom: -70px;
+  transform: translate(-50%, 0);
+  background: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  color: white;
+}
+#btn3 {
+  left: -120px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(90deg, #56ccf2 0%, #2f80ed 100%);
+  color: white;
+}
+/* Move btn4 farther right */
+#btn4 {
+  right: -150px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: white;
+}
+.hidden {
+  display: none;
+}

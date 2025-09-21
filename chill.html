@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="chill.css">
+  <meta charset="UTF-8">
+  <title>Show More Buttons</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .btn {
+      margin: 5px;
+      padding: 10px 20px;
+    }
+    .btn#mainBtn {
+      background-color: red;
+      color: white;
+      font-weight: bold;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .btn-group {
+      position: relative;
+    }
+    #popupBox {
+      position:fixed;
+      top:30px;
+      left:50%;
+      transform:translateX(-50%);
+      z-index:2000 !important;
+      box-shadow:0 0 20px #000;
+      border-radius:10px;
+      background:#fff;
+      padding:16px 24px;
+      text-align:center;
+      min-width:220px;
+      max-width:90vw;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="btn-group">
+      <button id="mainBtn" class="btn">YOUR PC HAS VIRUS</button>
+      <button class="btn hidden" id="btn1">FIX THE ISSUE</button>
+      <button class="btn hidden" id="btn2">LET THE VIRUS FUCK THE COMPUTER</button>
+      <button class="btn hidden" id="btn3">CLOSE THE PC</button>
+      <button class="btn hidden" id="btn4" onclick="document.getElementById('secretLink').classList.remove('hidden')">SECRET METHOD</button>
+      <div id="secretLink" class="hidden" style="position:fixed; bottom:40px; left:50%; transform:translateX(-50%); z-index:3000; background:#fff; border-radius:8px; box-shadow:0 0 10px #000; padding:12px 20px;">
+        <a href="#" id="firstSecret" style="font-size:1.1em; color:#2c3e50; text-decoration:underline;">Now we are talking, this will solve the problem</a>
+        <button onclick="this.parentElement.classList.add('hidden')" style="margin-left:16px; padding:2px 8px; font-size:0.9em;">Close</button>
+        <div id="secondSecretBox" class="hidden" style="margin-top:14px;">
+          <a href="https://www.google.com/search?q=book+flight+from+pune+to+delhi&sca_esv=9262f80ffd90b9fa&ei=QxHQaJeuEo6W4-EPo-C3sQw&oq=BOOK+FLIGHT+FROM+PUNE+TO+&gs_lp=Egxnd3Mtd2l6LXNlcnAiGUJPT0sgRkxJR0hUIEZST00gUFVORSBUTyAqAggAMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSKA9ULwBWO0scAF4AJABAJgB8gGgAc0qqgEGMC4xLjI0uAEByAEA-AEBmAIaoALrK6gCFMICGRAuGIAEGNEDGEMYtAIYxwEYigUY6gLYAQHCAhMQABiABBhDGLQCGIoFGOoC2AEBwgIdEAAYgAQYtAIY1AMY5QIYtwMYigUY6gIYigPYAQHCAhAQABgDGLQCGOoCGI8B2AECwgIQEC4YAxi0AhjqAhiPAdgBAsICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYigXCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgIOEC4YgAQYsQMY0QMYxwHCAhAQLhiABBjRAxhDGMcBGIoFwgILEC4YgAQYsQMYgwHCAhMQLhiABBixAxjRAxhDGMcBGIoFwgILEC4YgAQY0QMYxwHCAg0QLhiABBjRAxjHARgKwgIOEAAYgAQYkQIYsQMYigWYAxPxBTafyi6tsz47ugYECAEYB7oGBggCEAEYCpIHBjEuMS4yNKAHn6sBsgcGMC4xLjI0uAfXK8IHBjItMjUuMcgHfg&sclient=gws-wiz-serp" target="_blank" id="secondSecret" style="font-size:1.05em; color:#8e44ad; text-decoration:underline;">Oh no wrong link, but this is the real one, SEE AN EXPERT FOR THE ISSUE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="popupBox1" class="hidden" style="position:fixed; top:30px; left:50%; transform:translateX(-50%); z-index:2000; box-shadow:0 0 20px #000; border-radius:10px; background:#fff; padding:10px 18px; text-align:center; min-width:180px; max-width:90vw; font-size:0.9em; color:#555;">
+    <div style="font-size:0.9em; margin-bottom:8px; color:#555; display:block;">Damn, A normal person choice.</div>
+    <img id="popupImg1" src="https://i.pinimg.com/736x/6a/8e/38/6a8e382ac47e9a4abac382650b344427.jpg" alt="Popup" style="max-width:200px; border-radius:8px; cursor:pointer; display:block; margin:0 auto;">
+  </div>
+  <div id="popupBox2" class="hidden" style="position:fixed; top:30px; left:50%; transform:translateX(-50%); z-index:2000; box-shadow:0 0 20px #000; border-radius:10px; background:#fff; padding:10px 18px; text-align:center; min-width:180px; max-width:90vw; font-size:0.9em; color:#555;">
+    <div style="font-size:0.9em; margin-bottom:8px; color:#555; display:block;">Reached enlightenment, Can't be bothered</div>
+    <img id="popupImg2" src="https://media.tenor.com/5bR-XSXK_3cAAAAM/transcend-heavenly.gif" alt="Popup" style="max-width:200px; border-radius:8px; cursor:pointer; display:block; margin:0 auto;">
+  </div>
+  <div id="popupBox3" class="hidden" style="position:fixed; top:30px; left:50%; transform:translateX(-50%); z-index:2000; box-shadow:0 0 20px #000; border-radius:10px; background:#fff; padding:10px 18px; text-align:center; min-width:180px; max-width:90vw; font-size:0.9em; color:#555;">
+    <div style="font-size:0.9em; margin-bottom:8px; color:#555; display:block;">The virus is not gonna disappear</div>
+    <img id="popupImg3" src="https://media.tenor.com/X0wcFhkwg4QAAAAM/me-trying-to-avoid-problems-bad.gif" alt="Popup" style="max-width:200px; border-radius:8px; cursor:pointer; display:block; margin:0 auto;">
+  </div>
+
+  <script>
+    document.getElementById("mainBtn").onclick = function() {
+      document.getElementById("btn1").classList.toggle("hidden");
+      document.getElementById("btn2").classList.toggle("hidden");
+      document.getElementById("btn3").classList.toggle("hidden");
+      document.getElementById("btn4").classList.toggle("hidden");
+    };
+    document.getElementById("btn1").onclick = function() {
+      document.getElementById("popupBox1").classList.remove("hidden");
+    };
+    document.getElementById("btn2").onclick = function() {
+      document.getElementById("popupBox2").classList.remove("hidden");
+    };
+    document.getElementById("btn3").onclick = function() {
+      document.getElementById("popupBox3").classList.remove("hidden");
+    };
+    document.getElementById("popupImg1").onclick = function() {
+      document.getElementById("popupBox1").classList.add("hidden");
+    };
+    document.getElementById("popupImg2").onclick = function() {
+      document.getElementById("popupBox2").classList.add("hidden");
+    };
+    document.getElementById("popupImg3").onclick = function() {
+      document.getElementById("popupBox3").classList.add("hidden");
+    };
+    document.getElementById("firstSecret").onclick = function(e) {
+      e.preventDefault();
+      document.getElementById("secondSecretBox").classList.remove("hidden");
+      window.open("https://www.flipkart.com/fashion-count-lingerie-set/p/itm355baf0e2fbf4?pid=LINFYRSMCZYGMGHN&lid=LSTLINFYRSMCZYGMGHNVQ7IHP&marketplace=FLIPKART&sattr[]=color&st=color", "_blank");
+    };
+  </script>
+</body>
+</html>
